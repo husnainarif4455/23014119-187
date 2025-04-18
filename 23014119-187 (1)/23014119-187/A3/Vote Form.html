@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote Now</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-10 bg-gray-100">
+  <form id="voteForm" class="max-w-md mx-auto bg-white p-8 rounded shadow space-y-4">
+    <h2 class="text-2xl font-bold text-center mb-4">Cast Your Vote</h2>
+    <input type="text" id="voterName" placeholder="Your Name" class="w-full border p-3 rounded" required>
+    <div>
+      <label class="block mb-2 font-medium">Choose a Candidate:</label>
+      <label class="block"><input type="radio" name="candidate" value="Candidate 1"> Candidate 1</label>
+      <label class="block"><input type="radio" name="candidate" value="Candidate 2"> Candidate 2</label>
+    </div>
+    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded">Submit Vote</button>
+  </form>
+
+  <a href="/A3/Result.html" class="px-5 py-3 bg-gray-800 text-white rounded ml-4">Result</a>
+
+  <script>
+    document.getElementById("voteForm").onsubmit = function(e) {
+      e.preventDefault();
+      let name = document.getElementById("voterName").value;
+      let candidate = document.querySelector("input[name='candidate']:checked");
+      if (!candidate) {
+        alert("Please select a candidate!");
+        return;
+      }
+      alert(name + " voted for " + candidate.value);
+      // Redirect or store vote in localStorage here if needed
+    };
+  </script>
+</body>
+</html>
