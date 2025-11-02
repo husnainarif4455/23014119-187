@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-white text-gray-900 transition-colors duration-500">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">John Doe</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <button id="modeToggle" class="bg-gray-200 px-3 py-1 rounded-lg hover:bg-gray-300 transition">🌙</button>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto text-center py-16 px-6">
+    <img src="https://via.placeholder.com/150" alt="Profile" class="mx-auto rounded-full shadow-lg mb-6">
+    <h2 class="text-3xl font-bold mb-4">Hello, I'm John Doe</h2>
+    <p class="max-w-2xl mx-auto text-lg">
+      I’m a web developer passionate about building responsive and interactive websites using modern web technologies like HTML5, CSS3, and JavaScript.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Tailwind CSS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="project-card">
+        <h3 class="text-xl font-semibold mb-2">Project One</h3>
+        <p class="mb-3">A responsive landing page built using HTML, CSS, and JavaScript.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+        <p class="mb-3">A simple To-Do App built using vanilla JavaScript and Local Storage.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3 class="text-xl font-semibold mb-2">Project Three</h3>
+        <p class="mb-3">A portfolio template styled using Tailwind CSS framework.</p>
+        <a href="#" class="text-blue-600 hover:underline">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-100 py-16 px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+      <form class="max-w-md mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg" required>
+        <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg" rows="4"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 John Doe | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+---
+
+ 4. Documentation (copy this into a Word file named “Documentation.docx”)
+
+Title: Personal Portfolio Website using HTML5, CSS3, and JavaScript
+Student Name: John Doe
+Course: Introduction to Modern Web Development Technologies
+
+1. Objective
+
+The purpose of this project is to design and develop a personal portfolio webpage using HTML5, CSS3, and JavaScript. It demonstrates knowledge of web structure, responsive design, and interactivity using modern web development techniques.
+
+
+2. Design & Structure
+
+The webpage is organized into four sections — About, Skills, Projects, and Contact — providing clear navigation and professional presentation. Semantic HTML5 tags were used to ensure accessibility and SEO-friendly structure.
+
+
+3. Technologies Used
+
+HTML5: Structured the content using semantic elements such as <header>, <section>, and <footer>.
+
+CSS3: Styled the layout with responsive design using media queries and hover effects.
+
+Tailwind CSS: Used as a front-end framework to simplify responsive design and styling.
+
+JavaScript: Added interactivity features like Dark/Light mode toggle and smooth scrolling navigation.
+
+
+4. Features
+
+Responsive and mobile-friendly design.
+
+Dark/Light mode toggle using JavaScript.
+
+Smooth scroll navigation to page sections.
+
+Animated hover effects on skills and projects.
+
+Simple contact form interface for user engagement.
+
+
+5. Conclusion
+
+This project successfully meets the assignment objectives. It showcases the integration of HTML, CSS, and JavaScript to build an interactive, responsive, and aesthetically appealing personal portfolio website. Tailwind CSS was used to enhance design efficiency and consistency.
+
+
+Would you like me to create a ZIP fill.

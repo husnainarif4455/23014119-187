@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Skill and Project Cards */
+.skill-card, .project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-5px);
+  background-color: #e0f2fe;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.dark-mode header {
+  background-color: #1f2937;
+}
+
+.dark-mode .bg-gray-100 {
+  background-color: #1f2937;
+}
+
+.dark-mode .project-card, .dark-mode .skill-card {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  border: 1px solid #374151;
+}
